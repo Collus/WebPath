@@ -43,21 +43,21 @@
 			text-decoration: none;
 			color: #313131;
 		}
-		.menuBox li dl{
+		.subMenu{
 			display: none;
 			width: 450px;
+			/*height: 420px;*/
 			border: 1px solid #B1191A;
-			border-left: 0;
 			position: absolute;
 			left: 234px;
 			top:40px;
 		}
 
 		.menuBox li:hover{
-			border: 1px solid white;
-			box-shadow: 0 0 3px;
-			-moz-box-shadow:0 0 3px;
-			-webkit-box-shadow:0 0 3px;
+			border: 1px solid #DDD
+			box-shadow: 0 0 8px #DDD;
+			-moz-box-shadow:0 0 8px #DDD;
+			-webkit-box-shadow:0 0 8px #DDD;
 			background-image: none;		
 			background-color: #FFF;
 			display: block;
@@ -66,38 +66,270 @@
 			text-decoration: underline;
 			color: #e43934;
 		}
-	
-		
+		.menuBox li:hover .subMenu{
+			display: block;
+		}
+		.menuBox li:hover span{
+			background-image: url(image/blankcube.png);
+			display: inline-block;
+			width: 16px;
+			height: 30px;
+			position: absolute;
+			left: 220px;
+			z-index: 10;
+		}
+		.menuBox li dl dt{
+			display: block;
+			float: left;
+		}
+		.menuBox li dl dt{
+			display: block;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		.menuBox li dl dd{
+			display: block;
+			overflow: hidden;	
+		}
+		.menuBox li dl dd a{
+			display: block;
+			text-align: center;
+			border-left: 1px solid #DDD;
+			padding: 0 8px;
+			float: left;
+			height: 14px;
+			line-height: 14px;
+			margin:6px 0;
+		}
 	</style>
 </head>
 <body
 <ul class="menuBox">
 	<div class="menuTitle">全部目录</div>
-	<li><a href="#">图书、影像、音乐</a>
-		<dl>
+	<li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
 			<dt>教育</dt>
-			<dd>教材 中小学 考试 外语 书法 词典 </dd>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
 			<dt>教育</dt>
-			<dd>教材 中小学 考试 外语 书法 词典 </dd>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
 			<dt>教育</dt>
-			<dd>教材 中小学 考试 外语 书法 词典 </dd>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
 			<dt>教育</dt>
-			<dd>教材 中小学 考试 外语 书法 词典 </dd>	
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd><br/>
 		</dl>
 	</li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
-	<li><a href="#">图书、影像、音乐</a></li>
+	<li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+	<li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>		
+		</dl>
+	</li>
+	<li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    <li><a href="#">图书、影像、音乐</a><span></span>
+		<dl class="subMenu">
+			<dt><a href="#">教育</a></dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+			<dt>教育</dt>
+			<dd><a href="#">考试</a><a href="#">外语</a><a href="#">书法</a><a href="#">词典</a><a href="#">中小学</a><a href="#">高校</a></dd>
+		</dl>
+	</li>
+    
 </ul>
 </body>
 </html>
