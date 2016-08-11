@@ -1,0 +1,137 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: "MicroSoft YAHEI";
+	font-size:12px; 
+}
+.menuBox{
+	padding: 0px;
+	width:220px;
+	border:2px solid #B1191A;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 10px;	
+}
+.menuTitle{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	background-color: #B1191A;
+	color: white;
+	text-indent: 1em;
+}
+.menuBox li{
+	height: 30px;
+	line-height: 30px;
+	list-style: none;
+	text-indent: 1em;
+	background-image: url(../image/arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	z-index: 3;
+	background-color: #F8F8F8;
+}
+.menuBox li a {
+	text-decoration: none;
+	color: #313131;
+}
+.subMenu{
+	display: none;
+	width: 650px;
+	/*height: 420px;*/
+	border: 1px solid #B1191A;
+	position: absolute;
+	left: 234px;
+	top:51px;
+}
+.menuBox .lihover{  /*鼠标移动到上面时显示样式*/
+	border: 1px solid #DDD
+	box-shadow: 0 0 8px #DDD;
+	-moz-box-shadow:0 0 8px #DDD;
+	-webkit-box-shadow:0 0 8px #DDD;
+	background-image: none;		
+	background-color: #FFF;
+	display: block;
+}
+.menuBox li a:hover{ /*显示li的字体颜色*/
+	text-decoration: underline;
+	color: #e43934;
+}
+.menuBox .lihover .subMenu{
+	display: block;
+}
+.menuBox .lihover span{ /*盖掉箭头*/
+	background-image: url(../image/blankcube.png);
+	display: inline-block;
+	width: 16px;
+	height: 30px;
+	position: absolute;
+	left: 220px;
+	z-index: 10;
+}
+.submenuhover{
+	display: block;
+}
+.leftDiv{
+	display: block;
+	float: left;
+	width: 430px;
+	position: relative;
+	/*background-color: #BBB;*/
+	margin:10px;
+}
+.leftDiv dl{
+	display: blcok;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 5px;
+}
+.leftDiv dl dt{
+	display: block;
+	width: 40px;
+	float: left;
+	border:1 solid red;
+}
+.leftDiv dl dt a{
+	text-decoration: underline;
+	color: #B1191A;
+	font-size: 10pt;
+	font-weight: bold;
+}
+.leftDiv dl dd{
+	display: block;
+}
+.leftDiv dl dd a{
+	border-left: 1px solid #DDD;
+	font-size: 9pt;
+	padding:0 10px; 
+	height: 20px;
+	line-height: 20px;
+}
+.rightDiv{
+	display: block;
+	float: right;
+	width: 180px;
+	margin-right:10px;
+}
+/*	.rightDiv .pic {
+	display: block;
+	margin:0;
+}*/
+.rightDiv .pic dd{
+	display: block;
+	margin-left: 0;
+	margin-bottom: 2px;
+}
+.rightDiv .recomm dt{
+	display: block;
+	margin:0;
+	padding:0;
+	font-size: 14px;
+	font-weight: bold;
+} 
+
+.rightDiv .recomm dd{
+	display: block;
+	height: 20px;
+	margin:0;
+} 
