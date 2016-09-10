@@ -10,3 +10,14 @@
 // 	}
 
 // }
+$(function(){
+	$("li").each(function (index,element) {
+		$(this).mouseover(function () {
+			$(this).addClass('lihover')
+		})
+		$(this).mouseout(function () {
+			$(this).removeClass("lihover")
+		})
+	})
+
+})
